@@ -1,0 +1,19 @@
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\MyFTPServer.exe.config
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\MyFTPServer.exe
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\MyFTPServer.pdb
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\obj\Debug\MyFTPServer.exe
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\obj\Debug\MyFTPServer.pdb
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\StyleCop.CSharp.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\StyleCop.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer\MyFTPServer\bin\Debug\ru\Microsoft.Build.Utilities.v3.5.resources.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\MyFTPServer.exe.config
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\obj\Debug\MyFTPServer.exe
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\obj\Debug\MyFTPServer.pdb
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\MyFTPServer.exe
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\MyFTPServer.pdb
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\StyleCop.CSharp.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\StyleCop.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\ru\Microsoft.Build.Utilities.v3.5.resources.dll
+I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\obj\Debug\MyFTPServer.csprojResolveAssemblyReference.cache
