@@ -61,9 +61,7 @@ namespace MyFtpServer
         {
             TcpClient client = Listener.EndAcceptTcpClient(result);
             Listener.BeginAcceptTcpClient(HandleAcceptTcpClient, Listener);
-
             ClientConnection connection = new ClientConnection(client);
-
             ThreadPool.QueueUserWorkItem(connection.HandleClient, client);
         }
     }

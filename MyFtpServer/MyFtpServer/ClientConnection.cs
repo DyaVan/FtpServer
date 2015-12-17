@@ -31,8 +31,8 @@ namespace MyFtpServer
 
         private string username = string.Empty;
 
-        private string root = @"I:\Учеба";
-        private string currentDirectory = @"I:\Учеба";
+        private string root = @"C:\";
+        private string currentDirectory = @"C:\";
         
         private DataConnectionType dataConnectionType = DataConnectionType.Active;
         private DataTransferType dataTransferType = DataTransferType.ASCII;
@@ -42,11 +42,14 @@ namespace MyFtpServer
 
         public ClientConnection(TcpClient client)
         {
-            controlClient = client;
-            controlStream = controlClient.GetStream();
+            if (client != null)
+            {
+                controlClient = client;
+                controlStream = controlClient.GetStream();
 
-            controlReader = new StreamReader(controlStream);
-            controlWriter = new StreamWriter(controlStream);
+                controlReader = new StreamReader(controlStream);
+                controlWriter = new StreamWriter(controlStream);
+            }
         }
 
         private enum DataConnectionType
@@ -123,7 +126,7 @@ namespace MyFtpServer
                                 response = Retrieve(arguments);
                                 break;
                             case "AUTH":
-                                cert = new X509Certificate(@"I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFtpServer\MyFtpServer\server2.cer");
+                                cert = new X509Certificate(@"C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFtpServer\server.cer");
                                 sslStream = new SslStream(controlStream);
                                 response = "234 Enabling TLS Connection";
                                 controlWriter.WriteLine(response);
@@ -380,8 +383,7 @@ namespace MyFtpServer
 
             string pathname = (string)result.AsyncState;
 
-            using (NetworkStream dataStream = dataClient.GetStream())
-            using (StreamReader dataReader = new StreamReader(dataStream, Encoding.ASCII))
+            NetworkStream dataStream = dataClient.GetStream();
             using (StreamWriter dataWriter = new StreamWriter(dataStream, Encoding.ASCII))
             {
                 IEnumerable<string> directories = Directory.EnumerateDirectories(pathname);
@@ -407,7 +409,7 @@ namespace MyFtpServer
                     FileInfo f = new FileInfo(file);
 
                     string date = f.LastWriteTime < DateTime.Now - TimeSpan.FromDays(180) ?
-                        f.LastWriteTime.ToString("MMM dd  yyyy", CultureInfo.CurrentCulture) : 
+                        f.LastWriteTime.ToString("MMM dd  yyyy", CultureInfo.CurrentCulture) :
                         f.LastWriteTime.ToString("MMM dd HH:mm", CultureInfo.CurrentCulture);
 
                     string line = string.Format(CultureInfo.CurrentCulture, "-rw-r--r--    2 2003     2003     {0,8} {1} {2}", f.Length, date, f.Name);
@@ -495,7 +497,7 @@ namespace MyFtpServer
         {
             if (disposing)
             {
-                // dispose managed resources
+                //// dispose managed resources
                 controlReader.Close();
                 controlStream.Close();
                 controlWriter.Close();

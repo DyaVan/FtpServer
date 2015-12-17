@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.exe">
+   <Modules>
+    <Module Name="myftpserver.exe">
+     <Namespaces>
+      <Namespace Name="MyFtpServer">
+       <Types>
+        <Type Name="FtpServer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HandleAcceptTcpClient(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2015-12-17 02:07:03Z" FixCategory="DependsOnFix" BreaksBuild="True">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer" File="FtpServer.cs" Line="64">В методе 'FtpServer.HandleAcceptTcpClient(IAsyncResult)' вызовите System.IDisposable.Dispose для объекта 'connection' перед тем, как все ссылки на него будут вне области видимости.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000" BreaksBuild="True">
+   <Name>Ликвидировать объекты перед потерей области</Name>
+   <Description>Если освобождаемый объект не высвобождается явно до того, как все ссылки на него оказываются вне области имен, объект будет высвобожден в некоторый заранее не определенный момент, когда сборщик мусора запустит завершающий метод объекта. Так как может возникнуть событие исключения, препятствующее выполнению метода завершения объекта, объект будет ликвидирован в явной форме.</Description>
+   <Resolution Name="NonExceptionEdge">В методе {0} вызовите System.IDisposable.Dispose для объекта {1} перед тем, как все ссылки на него будут вне области видимости.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>
