@@ -17,3 +17,10 @@ I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer �
 I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
 I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\bin\Debug\ru\Microsoft.Build.Utilities.v3.5.resources.dll
 I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFTPServer — копия\MyFTPServer\obj\Debug\MyFTPServer.csprojResolveAssemblyReference.cache
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\obj\Debug\MyFtpServer.exe
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\obj\Debug\MyFtpServer.pdb
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.exe.config
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.exe
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.pdb
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\StyleCop.CSharp.dll
+C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\StyleCop.dll

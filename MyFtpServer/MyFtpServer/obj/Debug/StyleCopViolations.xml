@@ -1,5 +1,1 @@
-<StyleCopViolations>
-  <Violation Section="Root.MyFtpServer.ClientConnection.Dispose%bool" LineNumber="505" Source="I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFtpServer\MyFTPServer\ClientConnection.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="SingleLineCommentMustBePrecededByBlankLine" RuleId="SA1515">A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</Violation>
-  <Violation Section="Root.MyFtpServer.ClientConnection" LineNumber="508" Source="I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFtpServer\MyFTPServer\ClientConnection.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="CodeMustNotContainMultipleBlankLinesInARow" RuleId="SA1507">The code must not contain multiple blank lines in a row.</Violation>
-  <Violation Section="Root.MyFtpServer" LineNumber="11" Source="I:\Учеба\Универ\5 семестр\СТП\Проекты\MyFtpServer\MyFTPServer\Program.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="ElementsMustBeSeparatedByBlankLine" RuleId="SA1516">Adjacent elements must be separated by a blank line.</Violation>
-</StyleCopViolations>
+<StyleCopViolations />
