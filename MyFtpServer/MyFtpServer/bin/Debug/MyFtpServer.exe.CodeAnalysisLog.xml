@@ -12,7 +12,7 @@
          <Members>
           <Member Name="#HandleAcceptTcpClient(System.IAsyncResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2015-12-17 02:07:03Z" FixCategory="DependsOnFix" BreaksBuild="True">
+            <Message TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2015-12-17 02:15:34Z" FixCategory="DependsOnFix">
              <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer" File="FtpServer.cs" Line="64">В методе 'FtpServer.HandleAcceptTcpClient(IAsyncResult)' вызовите System.IDisposable.Dispose для объекта 'connection' перед тем, как все ссылки на него будут вне области видимости.</Issue>
             </Message>
            </Messages>
@@ -27,7 +27,7 @@
   </Target>
  </Targets>
  <Rules>
-  <Rule TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000" BreaksBuild="True">
+  <Rule TypeName="Ликвидировать объекты перед потерей области" Category="Microsoft.Reliability" CheckId="CA2000">
    <Name>Ликвидировать объекты перед потерей области</Name>
    <Description>Если освобождаемый объект не высвобождается явно до того, как все ссылки на него оказываются вне области имен, объект будет высвобожден в некоторый заранее не определенный момент, когда сборщик мусора запустит завершающий метод объекта. Так как может возникнуть событие исключения, препятствующее выполнению метода завершения объекта, объект будет ликвидирован в явной форме.</Description>
    <Resolution Name="NonExceptionEdge">В методе {0} вызовите System.IDisposable.Dispose для объекта {1} перед тем, как все ссылки на него будут вне области видимости.</Resolution>

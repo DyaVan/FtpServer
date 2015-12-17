@@ -26,4 +26,3 @@ C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPSer
 C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\StyleCop.dll
 C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.exe.CodeAnalysisLog.xml
 C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\bin\Debug\MyFtpServer.exe.lastcodeanalysissucceeded
-C:\Users\VA-N_\OneDrive\Документы\GitHub\FtpServer\MyFtpServer\MyFTPServer\obj\Debug\MyFtpServer.csprojResolveAssemblyReference.cache
